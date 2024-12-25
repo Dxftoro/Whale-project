@@ -1,0 +1,23 @@
+services:
+
+  whale-db:
+    container_name: postgres-flask-db
+    build: users/
+    image: postgres:14
+    env_file: ./users/env-postgresql
+    volumes:
+      - ./users:/docker-entrypoint-initdb.d
+      - /var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  flask-db-observer:
+    depends_on:
+      - whale-db
+    build: flask/
+    command: python3 ./app.py
+    environment:
+      - DATABASE_URL=postgresql://anton:123456@whale-db:5432/users
+    ports: 
+      - 5000:5000
+

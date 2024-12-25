@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗАДАНИЕ 7 Галерея</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_galery.css">
+    <!--link rel="stylesheet" href="styles_services.css"-->
+</head>
+
+<header>
+    <div id="main-header-wrapper">
+    <nav class="navbar navbar-expand-lg">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/450/342/small_2x/Food__2814_29.jpg" id="header-logo" alt="logo">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-home"></i>Mintay Corporation
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" title="Эта же страница">Главная</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./services.html" title="Ссылка 1">Услуги</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./galery.html" title="Галерея">Галерея</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="extern.html" title="Ссылка 3">Ссылка 3</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="http://kubsu.ru" title="КубГУ" target="_blank">КубГУ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div id="main-header-wrapper">
+</header>
+
+<body>
+    <div class="container mt-5">
+        <div class="gallery">
+            <div class="arrow left-arrow">
+                <span>&#10094;</span>
+            </div>
+            <div class="gallery-wrapper">
+                <div class="gallery-slide">
+                    <img src="https://calorizator.ru/sites/default/files/imagecache/product_512/product/pollack-1.jpg" alt="Изображение">
+                    <img src="https://cdn.tveda.ru/thumbs/066/066768119814691aa2e0f6b1078d182b/84efa4aedbc9b71ac29b3811282d0728.jpg" alt="Изображение">
+                    <img src="https://www.positive-market.ru/-/f/store/offers/1000x1000q80s/1jwd38iddas8uzh7.jpg" alt="Изображение">
+                    <img src="https://kachestvorb.ru/upload/iblock/4b8/4b8a5bb3cb2c5f94deb0c6ce8a55a583.jpg" alt="Изображение">
+                    <img src="https://barboss-etalon.ru/thumb/2/C7Y2gF6o2t4Sg30ntdRtyA/r/d/kambala.jpg" alt="Изображение">
+                    <img src="https://vodovoz.ru/upload/iblock/45d/45d01c0a75b9f02424b9f8db3a977f33.jpeg" alt="Изображение">
+                </div>
+            </div>
+            <div class="arrow right-arrow">
+                <span>&#10095;</span>
+            </div>
+        </div>
+        <div class="pager mt-3">
+            <span id="current-page">1</span> / <span id="total-pages">3</span>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/galery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

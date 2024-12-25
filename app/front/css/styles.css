@@ -1,0 +1,186 @@
+body {
+    background-color: #111111;
+    color: white;
+
+    font-family: Arial;
+}
+
+/*-----------------------> МЕНЮ ХЕДЕРА <-----------------------*/
+
+#main-header-wrapper {
+	background-color: #008B8B;
+	color: white;
+}
+
+#header-logo {
+	width: 100px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2.0rem;
+}
+.navbar-brand i {
+    margin-right: 10px;
+}
+
+.nav-link {
+	color: #fff;
+	font-size: 1.1rem;
+}
+
+#main-content-wrapper {
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+}
+
+/*-----------------------> ФОРМА ЗАКАЗА <-----------------------*/
+
+.orderform-result-succes {
+	font-size: 2.0rem;
+	color: cyan;
+}
+.orderform-result-failure {
+	font-size: 1.3rem;
+	color: red;
+}
+
+#orderform-selection {
+	background-color: white;
+	color: black;
+	height: 30px;
+}
+
+#orderform-input {
+	background-color: white;
+	color: black;
+}
+
+/*-----------------------> СПИСКИ <-----------------------*/
+
+#main-list-wrapper {
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+
+	order: 2;
+}
+
+.list-group-item {
+	background-color: #19191a;
+	width: 600;
+}
+
+#counted-list1 {
+	display: inline-block;
+}
+
+#list-img-1 {
+
+}
+
+/*-----------------------> ТАБЛИЦА <-----------------------*/
+
+#table-main {
+	border: 1px solid white;
+    border-spacing: 1px 1px;
+    color: white;
+}
+
+#table-wrapper {
+	order: 1;
+}
+
+th {
+	padding: 3px;
+}
+
+td {
+	border: 1px solid white;
+	padding: 6px;
+}
+
+.trseq1 {
+	background-color: #2F4F4F;
+}
+
+.trseq2 {
+	background-color: #1f1f1f;
+}
+
+/*-----------------------> ФОРМА <-----------------------*/
+
+#form-wrapper {
+	order: 3;
+}
+
+#openForm {
+	background-color: #008B8B;
+	border-color: #008B8B;
+}
+
+#submitForm {
+	background-color: #008B8B;
+	border-color: #008B8B;
+}
+
+.modal-content {
+	background-color: #111111;
+}
+
+.modal-header {
+	.close {
+		color: #ffff;
+	}
+}
+
+.modal-body {
+	input, textarea {
+		color: black;
+	}
+}
+
+/*-----------------------> ПОДВАЛ <-----------------------*/
+
+#footer-main {
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+	height: 80px;
+	color: #ffff;
+	background-color: #008B8B;
+}
+
+#footer-text {
+	position: relative;
+	display: inline-block;
+	padding-left: 30px;
+
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer-text:after {
+	content: "(с) Антон, Mintay Corporation 2024 - все права защищены.";
+}
+
+/*-----------------------> MEDIA <-----------------------*/
+@media screen and (min-width: 992px) {
+	#main-list-wrapper {
+		order: 1;
+	}
+	#table-wrapper {
+		order: 2;
+	}
+	#form-wrapper {
+		order: 3;
+	}
+
+	#header-logo {
+		justify-self: left;
+	}
+}

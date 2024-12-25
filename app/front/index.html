@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗАДАНИЕ 8</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<header>
+    <div id="main-header-wrapper">
+    <nav class="navbar navbar-expand-lg">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/450/342/small_2x/Food__2814_29.jpg" id="header-logo" alt="logo">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-home"></i>Mintay Corporation
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" title="Эта же страница">Главная</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./services.html" title="Ссылка 1">Услуги</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./galery.html" title="Галерея">Галерея</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../extern.html" title="Ссылка 3">Ссылка 3</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="http://kubsu.ru" title="КубГУ" target="_blank">КубГУ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div id="main-header-wrapper">
+</header>
+
+<body>
+    <div class="container mt-5" id="main-content-wrapper">
+        <div id="orderform-wrapper">
+            <h2>ЗАКАЗАТЬ РЫБУ</h2>
+
+            Товар:
+            <select name="items" id="orderform-selection">
+                <option value="Минтай">Минтай</option>
+                <option value="Горбуша">Горбуша</option>
+                <option value="Корюшка">Корюшка</option>
+                <option value="Треска">Треска</option>
+                <option value="Тунец">Тунец</option>
+                <option value="Мойва">Мойва</option>
+                <option value="Скумбрия">Скумбрия</option>
+            </select>
+
+            <input name="count" id="orderform-input" type="text" min="1" placeholder="Количество"></input>
+            <button id="orderform-button">Заказать</button>
+            <div class="" id="orderform-result"></div>
+
+            <br /><br /><br />
+        </div>
+
+        <div id="main-list-wrapper">
+            <h2 class="text-center">Список гиперссылок:</h2>
+
+            <div class="container-fluid d-flex justify-content-center" id="list1-wrapper">
+                <ul class="list-group-mine list-group-xs" id="marked-list1">
+                      <li class="list-group-item justify-self-center"><a href="http://kubsu.ru" target="_blank">Абсолютная ссылка на главную сайта КубГУ</a></li>
+                      <li class="list-group-item"><a href="https://www.kubsu.ru/" target="_blank">Абсолютная ссылка в протоколе https</a></li>
+                      
+                      <li class="list-group-item">
+                          <strong>Ссылка на картинку</strong><br />
+                          <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Walleye_pollock.jpg/275px-Walleye_pollock.jpg" id="list-img-1" title="Минтай" style="width: 500px;"/>
+                      </li>
+                      
+                      <li class="list-group-item"><a href="other/test.html" target="_blank">Сокращённая сылка на внутреннюю страницу</a></li>
+                      <li class="list-group-item"><a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+                      <li class="list-group-item"><a href="#biography">Ссылка на фрагмент текущей страницы (Биография)</a></li>
+                      
+                      <li class="list-group-item"><a href="index.html?field-fio=Иванов%Иван%Иванович&field-tel=88005553535&field-email=po4ta@mail.com">
+                        Ссылка с тремя параметрами URL</a>
+                      </li>
+                      <li class="list-group-item"><a href="index.html?id=#biography">Ссылка с параметром id в URL</a></li>
+                      
+                      <li class="list-group-item"><a href="./services.html" target="_blank">Относительная ссылка на страницу в текущем каталоге</a></li>
+                      <li class="list-group-item"><a href="../../extern.html" target="_blank">Относительная ссылка на страницу двумя каталогами выше</a></li>
+                      
+                      <li class="list-group-item">
+                          <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0_(%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C)" target="_blank">Контекстная ссылка</a>
+                          в тексте этого абзаца
+                      </li>
+
+                      <li class="list-group-item"><a href="https://ru.wikipedia.org/wiki/OpenGL#История" target="_blank">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                                  
+                      <li class="list-group-item">
+                        Ссылки из прямоугольных и круглых областей картинки<br />
+                        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Theragra_chalcogramma_fishing.jpg/800px-Theragra_chalcogramma_fishing.jpg" usemap="#image-map" title="Промысел минтая" style="width: 500px">
+                        <map name="image-map">
+                            <area shape="rect" coords="34,44,270,350" href="https://ru.wikipedia.org/wiki/OpenGL" alt="Прямоугольная ссылка" />
+                            <area shape="circle" coords="337,300,50" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D1%82%D0%B0%D0%B9" alt="Круглая ссылка" />
+                        </map>
+                      </li>
+                      
+                      <li class="list-group-item"><a href="">Ссылка с пустым href</a></li>
+                      <li class="list-group-item"><a tabindex="0">Ссылка без href</a></li>
+                      <li class="list-group-item"><a href="index.html" rel="nofollow">Ссылка, по которой запрещён переход поисковикам</a></li>
+                      <li class="list-group-item"><a href="index.html" rel="noindex">Ссылка, запрещённая для индексации поисковиками</a></li>
+                </ul>
+            </div>
+
+            <h2 class="text-center">Нумерованый список ссылок:</h2>
+
+            <div class="d-flex justify-content-center">
+                <ol id="counted-list1">
+                    <li><a href="index.html" title="Сокращенная ссылка на главную страницу">Сокращенная ссылка на главную страницу</a></li>
+                    <li><a href="services.html" target="_blank" title="Относительная ссылка на страницу в текущем каталоге">Относительная ссылка на страницу в текущем каталоге</a></li>
+                    <li><a href="../../extern.html" target="_blank" title="Относительная ссылка на страницу двумя каталогами выше">Относительная ссылка на страницу двумя каталогами выше</a></li>
+                    <li><a href="other/test.html" target="_blank" title="Сокращённая сылка на внутреннюю страницу">Сокращённая сылка на внутреннюю страницу</a></li>
+                </ol><br />
+            </div>
+
+            <a class="text-center" href="ftp://some_user:pollok@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a>
+            <br /><br />
+        </div>
+
+        <div class="container text-center" id="table-wrapper">
+            <table class="table text-white" id="table-main">
+                <h2>ТАБЛИЦА НЕ ПОЙМИ ЧЕГО (ОЧЕНЬ ВАЖНОЕ):</h2>
+                <thead id="table-head">
+                    <tr>
+                        <th scope="col">Шапка 1</th>
+                        <th scope="col">Шапка 2</th>
+                        <th scope="col">Шапка 3</th>
+                        <th scope="col">Шапка 4</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="trseq1">
+                        <th scope="row">Ячейка 01</th>
+                        <td>Ячейка 02</td>
+                        <td>Ячейка 03</td>
+                        <td>Ячейка 04</td>
+                    </tr>
+                    <tr class="trseq2">
+                        <th scope="row">Ячейка 11</th>
+                        <td>Ячейка 12</td>
+                        <td>Ячейка 13</td>
+                        <td>Ячейка 14</td>
+                    </tr>
+                    <tr class="trseq1">
+                        <th scope="row">Ячейка 21</th>
+                        <td colspan="2">Ячейка 22</td>
+                        <td>Ячейка 23</td>
+                    </tr>
+                    <tr class="trseq2">
+                        <th scope="row">Ячейка 31</th>
+                        <td>Ячейка 32</td>
+                        <td>Ячейка 33</td>
+                        <td>Ячейка 34</td>
+                    </tr>
+                </tbody>
+            </table><br /><br />
+        </div>
+
+        <div class="container" id="form-wrapper">
+            <button type="button" class="btn btn-primary" id="openForm">Оставить отзыв</button>
+            <br /><br /><br />
+
+            <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="feedbackModalLabel">Форма обратной связи</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="feedbackForm" action="https://formcarry.com/s/z3-AJDUQMbE">
+                                <div class="form-group">
+                                    <label for="fullName">ФИО</label>
+                                    <input type="text" class="form-control" id="fullName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Телефон</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="progLanguage">Любимый язык программирования</label>
+                                    <select id="progLanguage" class="form-select" name="field-name-3" aria-label="Выбрать язык" required>
+                                        <option value="C">C</option>
+                                        <option value="C++">C++</option>
+                                        <option value="Lua">Lua</option>
+                                        <option value="Python">Python</option>
+                                        <option value="JavaScript">JavaScript</option>
+                                        <option value="PHP">PHP</option>
+                                        <option value="Java">Java</option>
+                                        <option value="Pascal">Pascal</option>
+                                        <option value="Haskel">Haskel</option>
+                                        <option value="Rust">Rust</option>
+                                        <option value="Clojure">Clojure</option>
+                                        <option value="Prolog">Prolog</option>
+                                        <option value="Scala">Scala</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Сообщение</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="consent" required>
+                                    <label class="form-check-label" for="consent">Соглашаюсь с политикой обработки персональных данных</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="submitForm">Отправить</button>
+                            </form>
+                            <div id="responseMessage" class="mt-3" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/orderform.js"></script>
+    <script src="js/mainform.js"></script>
+</body>
+
+<footer class="bottom">
+    <div id="footer-main">
+        <a id="footer-text" href="#main-header-wrapper"></a>
+    </div>
+</footer>
+
+</html>

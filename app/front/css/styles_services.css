@@ -1,0 +1,24 @@
+#selection-wrapper {
+	display: none;
+}
+#checkbox-wrapper {
+	display: none;
+}
+
+#services-input-count {
+	background-color: white;
+	color: black;
+}
+
+#services-footer-main {
+	display: flex;
+	align-items: center;
+	
+	position: absolute;
+  	bottom: 0;
+
+	width: 100%;
+	height: 80px;
+	color: #ffff;
+	background-color: #008B8B;
+}
