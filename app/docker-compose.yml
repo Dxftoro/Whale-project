@@ -21,3 +21,10 @@ services:
     ports: 
       - 5000:5000
 
+  mintay-static:
+    depends_on:
+      - whale-db
+      - flask-db-observer
+    build: front/
+    ports:
+      - 1337:80

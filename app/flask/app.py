@@ -31,7 +31,7 @@ def list_users():
     connection.close()
     return render_template("users.html", users=all_users)
 
-@app.route('/flask/', methods=["post", "get"])
+@app.route('/flask', methods=["post", "get"])
 def user_form():
     message = "Содержимое формы сбросится после отправки."
 
@@ -58,4 +58,5 @@ def list_dir():
     return render_template("dir.html", files=files)
 
 if __name__ == '__main__':
+    print(app.static_folder)
     app.run(debug=True, host="0.0.0.0", port=5000)
